@@ -2,8 +2,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ReactNode, useEffect, useState } from "react";
 import LeftBracket from "./LeftBracket";
 import RightBracket from "./RightBracket";
-import { LinkType } from "@/data/nav";
 import { usePathname } from "next/navigation";
+import { LinkType } from "@/data/nav";
+import { useRouter } from "next/router";
 
 const variantsLeft = {
   hidden: { opacity: 0, x: "-10px" },
@@ -21,11 +22,11 @@ const Brackets = ({
   children: ReactNode;
   link: LinkType;
 }) => {
-  const pathname = usePathname();
+  const router = useRouter();
   const [isActive, setIsActive] = useState<boolean>(false);
   useEffect(() => {
-    setIsActive(pathname === link.path);
-  }, [pathname, link.path, setIsActive]);
+    setIsActive(router.pathname === link.path);
+  }, [router.pathname, link.path, setIsActive]);
 
   return (
     <div className="flex justify-center items-center w-fit relative z-50">

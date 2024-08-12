@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import ParticlesContainer from "@/components/ParticlesContainer";
 import TransitionAnimation from "@/components/TransitionAnimation";
 import "@/styles/globals.css";
 import { AnimatePresence, motion } from "framer-motion";
@@ -10,9 +11,10 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <Layout>
       <AnimatePresence mode="wait">
-        <motion.div key={router.route}>
+        <motion.div key={router.route} className="">
           <TransitionAnimation />
-          <Component {...pageProps} />;
+          <ParticlesContainer />
+          <Component {...pageProps} />
         </motion.div>
       </AnimatePresence>
     </Layout>

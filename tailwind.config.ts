@@ -21,7 +21,7 @@ const config = {
           hover: "#00e187",
         },
         background: "#1c1c22",
-        muted: "#515152",
+        muted: "#747475",
         // #616163
         //#747475
         // #a1a1a1
@@ -38,6 +38,7 @@ const config = {
       },
       fontFamily: {
         primary: "var(--font-jetbrainsMono)",
+        secondary: "var(--font-hadjet)",
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
