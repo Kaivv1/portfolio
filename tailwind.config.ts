@@ -27,6 +27,10 @@ const config = {
         // #a1a1a1
       },
       keyframes: {
+        "spin-projects": {
+          from: { transform: "rotate(0deg)" },
+          to: { transform: "rotate(360deg)" },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -34,6 +38,32 @@ const config = {
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
+        },
+        "moving-shadow": {
+          "0%": {
+            boxShadow: "0px 0px 20px -1px rgba(0, 255, 153, 1)",
+            animationDelay: "1s",
+          },
+          "20%": {
+            boxShadow: "0px -2px 20px -1px rgba(0, 255, 153, 1)",
+            animationDelay: "1s",
+          },
+          "40%": {
+            boxShadow: "0px 2px 20px -1px rgba(0, 255, 153, 1)",
+            animationDelay: "1s",
+          },
+          "60%": {
+            boxShadow: "-2px 0px 20px -1px rgba(0, 255, 153, 1)",
+            animationDelay: "1s",
+          },
+          "80%": {
+            boxShadow: "2px 0px 20px -1px rgba(0, 255, 153, 1)",
+            animationDelay: "1s",
+          },
+          "100%": {
+            boxShadow: "0px 0px 20px -1px rgba(0, 255, 153, 1)",
+            animationDelay: "1s",
+          },
         },
       },
       fontFamily: {
@@ -43,6 +73,8 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "projects-spin": "spin-projects 20s linear infinite",
+        "move-shadows": "moving-shadow 4.5s ease-in-out infinite",
       },
     },
   },

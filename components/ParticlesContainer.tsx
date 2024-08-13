@@ -23,7 +23,7 @@ const ParticlesContainer = () => {
               value: "",
             },
           },
-          fullScreen: true,
+          fullScreen: false,
           fpsLimit: 120,
           interactivity: {
             events: {

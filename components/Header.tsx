@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 const Header = () => {
   return (
-    <header className="flex justify-between flex-col sm:flex-row gap-4 items-center mb-7 md:mb-10 lg:mb-24 xl:mb-28">
+    <header className="flex justify-between flex-col sm:flex-row gap-4 items-center mb-10 sm:mb-16 lg:mb-24 xl:mb-28">
       <Logo />
       <div className="flex items-center gap-3 z-10">
         <Socials />

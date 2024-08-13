@@ -8,7 +8,7 @@ const Navigation = () => {
   const router = useRouter();
   return (
     <nav className="bottom-0 fixed right-0 w-full xl:w-fit xl:right-6 bg-transparent xl:h-screen z-50 xl:flex xl:justify-center xl:items-center">
-      <ul className="flex xl:rounded-full bg-white/10 p-3 xl:p-4 justify-center gap-10 xl:h-[15.5rem] items-center xl:flex-col backdrop-blur-lg">
+      <ul className="flex xl:rounded-full bg-white/10 backdrop-blur-[4px] p-3 xl:p-4 justify-center gap-10 xl:h-[15.5rem] items-center xl:flex-col ">
         {navData.map((link) => (
           <Brackets key={link.name} link={link}>
             <Link href={link.path} className="relative">

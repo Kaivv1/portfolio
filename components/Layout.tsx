@@ -13,7 +13,7 @@ const jet = JetBrains_Mono({
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <div
-      className={`${jet.variable} text-white 2xl:px-[18rem] xl:px-[10rem] h-screen overflow-hidden bg-background pt-3 pb-16 px-3 lg:px-5 lg:pt-5 lg:pb-3 relative font-primary -z-0`}
+      className={`${jet.variable} text-white 2xl:px-[18rem] xl:px-[10rem] h-screen overflow-x-hidden overflow-y-auto bg-background pt-3 pb-16 px-3 lg:px-5 lg:pt-5 lg:pb-3 relative font-primary -z-0`}
     >
       <Header />
       <Navigation />
