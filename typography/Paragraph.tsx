@@ -15,7 +15,7 @@ const Paragraph: FC<ParagraphProps> = ({
 }) => {
   let defaultClassName: string = `text-${color ? color : "white"} text-${
     variant ? variant : "base"
-  } `;
+  } text-pretty `;
   if (variant === "sm") defaultClassName += "font-semibold";
   if (variant === "xs") defaultClassName += "font-extrabold";
 

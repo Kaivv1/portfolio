@@ -15,6 +15,11 @@ const config = {
       padding: "2rem",
     },
     extend: {
+      screens: {
+        "2xl": "1500px",
+        "3xl": "1600px",
+        "4xl": "1700px",
+      },
       colors: {
         primary: {
           DEFAULT: "#00ff99",

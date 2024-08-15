@@ -10,7 +10,8 @@ const Header = () => {
       <div className="flex items-center gap-3 z-10">
         <Socials />
         <Button size="sm" className="uppercase gap-1 text-xs md:text-sm">
-          Download CV <Download className="size-4" />
+          <span className="hidden sm:block">Download</span> CV{" "}
+          <Download className="size-4" />
         </Button>
       </div>
     </header>

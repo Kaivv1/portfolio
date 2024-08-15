@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <Layout>
       <AnimatePresence mode="wait">
-        <motion.div key={router.route} className="">
+        <motion.div key={router.route} className="w-full">
           <TransitionAnimation />
           <ParticlesContainer />
           <Component {...pageProps} />
