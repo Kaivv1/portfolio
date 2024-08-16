@@ -27,7 +27,7 @@ const SkillsSection = () => {
         }}
       >
         <Heading variant="h2" className="mb-5 text-center">
-          My skill arsenal
+          My arsenal
           <span className="text-primary">.</span>
         </Heading>
       </motion.div>

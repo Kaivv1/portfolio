@@ -14,8 +14,8 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
-import { FaGolang } from "react-icons/fa6";
 import { RiNextjsFill } from "react-icons/ri";
+import { FaGolang } from "react-icons/fa6";
 import { IconType } from "react-icons";
 
 export const skills: {

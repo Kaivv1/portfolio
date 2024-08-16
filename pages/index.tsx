@@ -20,6 +20,7 @@ export default function Home() {
   const [isClicked, setIsClicked] = useState<boolean>(false);
   const is2XL = useMediaQuery({ minWidth: 1500 });
   const is3XL = useMediaQuery({ minWidth: 1600 });
+  const is4XL = useMediaQuery({ minWidth: 1700 });
   const isXL = useMediaQuery({ minWidth: 1280 });
 
   useEffect(() => {
@@ -37,7 +38,7 @@ export default function Home() {
     handleAvatarSize();
 
     function handleProjectsSize() {
-      if (is2XL) {
+      if (is4XL) {
         setSizeProjects(180);
       } else if (isXL) {
         setSizeProjects(160);
@@ -46,7 +47,7 @@ export default function Home() {
       }
     }
     handleProjectsSize();
-  }, [is3XL, is2XL, isXL, setSizeAvatar, setSizeProjects]);
+  }, [is4XL, is3XL, is2XL, isXL, setSizeAvatar, setSizeProjects]);
 
   return (
     <main className="flex flex-col justify-center items-center gap-5 h-full xl:block ">
