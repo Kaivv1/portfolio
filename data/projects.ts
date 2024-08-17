@@ -58,7 +58,7 @@ export const projects: ProjectType[] = [
   {
     name: "BroStyle Dashboard",
     description:
-      "Sales dashboard for an e-commerce shop named BroStyle that can simulate orders to demonstrate it's full functionality.",
+      "Sales dashboard for an e-commerce shop named BroStyle that can also simulate orders to demonstrate it's full functionality.",
     showModal: false,
     image: "/brostyle.png",
     linkLiveDemo: "https://bro-style-dashboard.vercel.app",

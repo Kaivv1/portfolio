@@ -2,7 +2,7 @@ import { skills } from "@/data/skills";
 import Heading from "@/typography/Heading";
 import { motion } from "framer-motion";
 
-function getDelay(num: number) {
+export function getDelay(num: number) {
   if (num >= 10) {
     return 1 + (num - 10) * 0.1;
   } else {

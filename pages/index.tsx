@@ -50,7 +50,7 @@ export default function Home() {
   }, [is4XL, is3XL, is2XL, isXL, setSizeAvatar, setSizeProjects]);
 
   return (
-    <main className="flex flex-col justify-center items-center gap-5 h-full xl:block ">
+    <main className="flex flex-col justify-center items-center gap-5 h-full xl:block">
       <div className="flex flex-col xl:flex-row xl:justify-between justify-center sm:gap-20 gap-1 items-center">
         <motion.div className="text-center xl:text-start mb-4 flex flex-col items-center xl:items-start">
           <div className="text-primary">

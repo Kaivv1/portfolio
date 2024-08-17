@@ -16,7 +16,7 @@ const ParticlesContainer = () => {
     init && (
       <Particles
         id="tsparticles"
-        className="fixed top-0 bottom-0 left-0 right-0 -z-20"
+        className="fixed top-0 bottom-0 left-0 right-0 -z-50"
         options={{
           background: {
             color: {
