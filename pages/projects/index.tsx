@@ -1,7 +1,7 @@
+import ProjectsList from "@/components/ProjectsList";
 import Heading from "@/typography/Heading";
 import Paragraph from "@/typography/Paragraph";
 import { motion } from "framer-motion";
-import ProjectsList from "./ProjectsList";
 
 const Projects = () => {
   return (

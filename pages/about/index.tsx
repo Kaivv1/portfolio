@@ -1,9 +1,9 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import ObjectSection from "./ObjectSection";
-import AboutSection from "./AboutSection";
-import SkillsSection from "./SkillsSection";
-import CreateTableSection from "./CreateTableSection";
-import Peace from "./Peace";
+import ObjectSection from "../../components/ObjectSection";
+import AboutSection from "../../components/AboutSection";
+import SkillsSection from "../../components/SkillsSection";
+import CreateTableSection from "../../components/CreateTableSection";
+import Peace from "../../components/Peace";
 
 const About = () => {
   return (

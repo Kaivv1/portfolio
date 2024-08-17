@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { CodeXml, Eye } from "lucide-react";
 import { motion, useInView } from "framer-motion";
-import { getDelay } from "../about/SkillsSection";
+import { getDelay } from "./SkillsSection";
 import { useMediaQuery } from "react-responsive";
 import {
   AlertDialog,
