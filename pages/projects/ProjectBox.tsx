@@ -32,7 +32,7 @@ type ProjectProps = {
   index: number;
 };
 const MotionCard = motion(Card);
-const Project: FC<ProjectProps> = ({ project, index }) => {
+const ProjectBox: FC<ProjectProps> = ({ project, index }) => {
   const isSM = useMediaQuery({ maxWidth: 640 });
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -136,4 +136,4 @@ const Project: FC<ProjectProps> = ({ project, index }) => {
   );
 };
 
-export default Project;
+export default ProjectBox;

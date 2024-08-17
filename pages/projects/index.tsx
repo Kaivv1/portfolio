@@ -1,8 +1,7 @@
-import { projects } from "@/data/projects";
-import Project from "./Project";
 import Heading from "@/typography/Heading";
 import Paragraph from "@/typography/Paragraph";
 import { motion } from "framer-motion";
+import ProjectsList from "./ProjectsList";
 
 const Projects = () => {
   return (
@@ -34,12 +33,7 @@ const Projects = () => {
           </Paragraph>
         </motion.div>
       </div>
-
-      <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
-        {projects.map((project, i) => {
-          return <Project project={project} key={i} index={i + 1} />;
-        })}
-      </div>
+      <ProjectsList />
     </main>
   );
 };
