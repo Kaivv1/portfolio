@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import ParticlesContainer from "@/components/ParticlesContainer";
 import TransitionAnimation from "@/components/TransitionAnimation";
+import { Toaster } from "@/components/ui/toaster";
 import "@/styles/globals.css";
 import { AnimatePresence, motion } from "framer-motion";
 import type { AppProps } from "next/app";
@@ -15,6 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <TransitionAnimation />
           <ParticlesContainer />
           <Component {...pageProps} />
+          <Toaster />
         </motion.div>
       </AnimatePresence>
     </Layout>

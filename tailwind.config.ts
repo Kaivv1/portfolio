@@ -26,10 +26,7 @@ const config = {
           hover: "#00e187",
         },
         background: "#1c1c22",
-        muted: "#747475",
-        // #616163
-        //#747475
-        // #a1a1a1
+        muted: "#c4c4c4",
       },
       keyframes: {
         "spin-projects": {
@@ -47,27 +44,21 @@ const config = {
         "moving-shadow": {
           "0%": {
             boxShadow: "0px 0px 20px -1px rgba(0, 255, 153, 1)",
-            animationDelay: "1s",
           },
           "20%": {
             boxShadow: "0px -2px 20px -1px rgba(0, 255, 153, 1)",
-            animationDelay: "1s",
           },
           "40%": {
             boxShadow: "0px 2px 20px -1px rgba(0, 255, 153, 1)",
-            animationDelay: "1s",
           },
           "60%": {
             boxShadow: "-2px 0px 20px -1px rgba(0, 255, 153, 1)",
-            animationDelay: "1s",
           },
           "80%": {
             boxShadow: "2px 0px 20px -1px rgba(0, 255, 153, 1)",
-            animationDelay: "1s",
           },
           "100%": {
             boxShadow: "0px 0px 20px -1px rgba(0, 255, 153, 1)",
-            animationDelay: "1s",
           },
         },
       },
