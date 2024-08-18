@@ -6,6 +6,7 @@ const pass = process.env.PASSWORD;
 
 export const transporter = nodemailer.createTransport({
   service: "gmail",
+  secure: true,
   auth: {
     user: email,
     pass: pass,

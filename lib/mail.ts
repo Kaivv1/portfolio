@@ -1,4 +1,8 @@
-export const sendEmail = async (args: {}): Promise<{ message: string }> => {
+import { ContactFormProps } from "@/pages/contacts";
+
+export const sendEmail = async (
+  args: ContactFormProps
+): Promise<{ message: string }> => {
   const res = await fetch("/api/contact", {
     method: "POST",
     headers: {
