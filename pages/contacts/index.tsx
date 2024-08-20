@@ -1,10 +1,12 @@
+import Ninja from "@/components/Ninja";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { sendEmail } from "@/lib/mail";
 import Heading from "@/typography/Heading";
-import { Copy, CopyCheck, Loader, Mail, Phone, Send } from "lucide-react";
+import { motion } from "framer-motion";
+import { Copy, CopyCheck, Loader, Mail, Phone } from "lucide-react";
 import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 
@@ -62,14 +64,32 @@ const Contacts = () => {
       });
   };
   return (
-    <main>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 xl:gap-20">
+    <main className="">
+      <Ninja />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 3xl:gap-52">
         <div className="space-y-6 md:space-y-8">
-          <Heading variant="h2" className="text-center md:text-start">
-            Contacts<span className="text-primary">.</span>
-          </Heading>
-          <div className="md:space-y-10 space-y-8 flex flex-col items-center md:block">
-            <div className="flex items-center gap-3 md:gap-4 bg-transparent rounded-lg px-2 py-2 animate-move-shadows w-fit">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.4,
+              duration: 0.6,
+            }}
+          >
+            <Heading variant="h2" className="text-center md:text-start">
+              Contacts<span className="text-primary">.</span>
+            </Heading>
+          </motion.div>
+          <div className="md:space-y-10 space-y-8 flex flex-col items-center md:block relative">
+            <motion.div
+              className="flex items-center gap-3 md:gap-4 bg-transparent rounded-lg px-2 py-2 animate-move-shadows w-fit"
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                delay: 0.5,
+                duration: 0.6,
+              }}
+            >
               <Phone className="stroke-primary size-6 md:size-7" />
               <span className="text-sm md:text-base">{phone}</span>
               <Button
@@ -91,8 +111,16 @@ const Contacts = () => {
                   <Copy className="size-5 md:size-6" />
                 )}
               </Button>
-            </div>
-            <div className="flex items-center gap-3 md:gap-4 bg-transparent rounded-lg px-2 py-2 animate-move-shadows w-fit">
+            </motion.div>
+            <motion.div
+              className="flex items-center gap-3 md:gap-4 bg-transparent rounded-lg px-2 py-2 animate-move-shadows w-fit"
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                delay: 0.6,
+                duration: 0.6,
+              }}
+            >
               <Mail className="stroke-primary size-6 md:size-7" />
               <span className="text-sm md:text-base">{myEmail}</span>
               <Button
@@ -114,16 +142,32 @@ const Contacts = () => {
                   <Copy className="size-5 md:size-6" />
                 )}
               </Button>
-            </div>
+            </motion.div>
           </div>
         </div>
         <div className="space-y-2 xl:space-y-6">
-          <Heading variant="h2" className="text-center md:text-start">
-            Send me an email<span className="text-primary">.</span>
-          </Heading>
-          <form
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.4,
+              duration: 0.6,
+            }}
+          >
+            <Heading variant="h2" className="text-center">
+              Send me an email<span className="text-primary">.</span>
+            </Heading>
+          </motion.div>
+
+          <motion.form
             onSubmit={handleSubmit(onSubmit)}
-            className="max-w-[30rem] space-y-4 shadow-sm border bg-background border-primary-hover shadow-primary md:p-6 p-4 rounded-lg"
+            className=" space-y-4 shadow-sm border bg-background border-primary-hover shadow-primary md:p-6 p-4 rounded-lg"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.5,
+              duration: 0.6,
+            }}
           >
             <div className="space-y-1">
               <div className="flex items-center justify-between">
@@ -179,7 +223,7 @@ const Contacts = () => {
                   htmlFor="message"
                   className="text-primary text-sm md:text-base"
                 >
-                  Your message
+                  Message
                 </label>
                 {errors.message && (
                   <span className="text-red-600 font-semibold text-sm">
@@ -214,7 +258,7 @@ const Contacts = () => {
                 </>
               )}
             </Button>
-          </form>
+          </motion.form>
         </div>
       </div>
     </main>

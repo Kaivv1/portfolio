@@ -7,7 +7,7 @@ import Peace from "../../components/Peace";
 
 const About = () => {
   return (
-    <main className="space-y-3 ">
+    <main className="space-y-3">
       <div className="mb-6 sm:mb-10 flex justify-center sm:justify-between items-center">
         <CreateTableSection />
         <ObjectSection />

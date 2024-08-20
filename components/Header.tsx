@@ -2,6 +2,7 @@ import { Download } from "lucide-react";
 import Logo from "./Logo";
 import Socials from "./Socials";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -9,10 +10,12 @@ const Header = () => {
       <Logo />
       <div className="flex items-center gap-3 z-10">
         <Socials />
-        <Button size="sm" className="uppercase gap-1 text-xs md:text-sm">
-          <span className="hidden sm:block">Download</span> CV{" "}
-          <Download className="size-4" />
-        </Button>
+        <Link href="/CV.pdf" download target="_blank">
+          <Button size="sm" className="uppercase gap-1 text-xs md:text-sm">
+            <span className="hidden sm:block">Download</span> CV{" "}
+            <Download className="size-4" />
+          </Button>
+        </Link>
       </div>
     </header>
   );
