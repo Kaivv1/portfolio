@@ -19,7 +19,7 @@ const Projects = () => {
             What I've built until now<span className="text-primary">.</span>
           </Heading>
         </motion.div>
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -28,10 +28,10 @@ const Projects = () => {
           }}
         >
           <Paragraph variant="sm">
-            Currently I am learning some Golang with Postgresql and how to use
-            Docker, so I will be building something cool with that soon.
+            Currently I am learning some Golang, so I will be building something
+            cool with that soon.
           </Paragraph>
-        </motion.div>
+        </motion.div> */}
       </div>
       <ProjectsList />
     </main>
